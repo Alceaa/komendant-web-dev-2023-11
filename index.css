@@ -1,0 +1,126 @@
+html {
+  height: 100%;
+}
+body{
+	background: lightcyan;
+	margin: 0 auto;
+	font-family: 'Roboto Slab', serif;
+	min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+	flex-grow: 1;
+}
+.header, .footer-container{
+	top: 0;
+	width: 100%;
+	background: cadetblue;
+	font-family: 'Roboto Slab', serif;
+}
+.header{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.main_menu a:hover{
+	background: white;
+	scale: 1.05;
+	color: black;
+}
+.main_menu a{
+	display: inline-block;
+    margin-right: 50px;
+}
+.main_menu{
+	flex-basis: 100%;
+	background: transparent;
+	border: none;
+	color: white;
+}
+.nav-title{
+	color: white;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.sidebar {
+    position: absolute;
+	background: cadetblue;
+	top: 14%;
+	width: 300px;
+	border-bottom-right-radius: 15px;
+}
+.ttRow, .ttSingleRow{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#product_menu{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 1%;
+}
+#product_menu a:hover{
+	background: white;
+	scale: 1.05;
+	color: black;
+}
+.main {
+    margin-left: 300px;
+    padding: 30px 10px;
+}
+.main-container{
+	display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    width: 100%;
+    max-width: 1000px; 
+    justify-content: center;
+    justify-items: center; 
+    column-gap: 0px; 
+    row-gap: 60px;
+    margin: 0 auto;
+    padding-top: 1%;
+}
+table{
+	display: block;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+table, td{
+	border: 1px solid #333;
+	text-align: center;
+}
+td{
+	width: 9%;	
+}
+thead{
+	background-color: #333;
+	color: #fff;
+}
+.ttSingleRow{
+	font-size: 30px;
+}
+footer{
+	flex-shrink: 0;
+	padding-top: 10%;
+}
+.footer-container{
+	padding-left: 2%;
+}
+.footer-item{
+    display: inline-block;
+	vertical-align: top;
+    font-size: 14px;
+    color: white;	
+	margin-right: 5%;
+}
+.footer-item ul{
+	padding-left: 0;
+	list-style: none;
+}
+.selected{
+	border-bottom: 5px solid #FFFFE0;
+}
